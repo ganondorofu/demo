@@ -13,7 +13,7 @@ import com.example.demo.model.Book;
 import com.example.demo.repository.BookRepository;
 
 @Controller
-@RequestMapping("/books")
+@RequestMapping("/book")
 public class BookController {
 
     @Autowired
@@ -32,6 +32,6 @@ public class BookController {
     @PostMapping("/add")
     public String addBook(Book book) {
         bookRepository.save(book);
-        return "redirect:/books"; // 書籍一覧ページにリダイレクト
+        return "redirect:/book"; // 書籍一覧ページにリダイレクト
     }
 }

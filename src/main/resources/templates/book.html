@@ -11,7 +11,8 @@
     <h1>Books List</h1>
     
     <!-- 書籍追加フォーム -->
-    <form th:action="@{/books/add}" th:object="${book}" method="post">
+    <form th:action="@{/book/add}" th:object="${book}" method="post">
+
         <label for="bookId">Book ID:</label>
         <input type="text" th:field="*{book_id}" id="bookId">
         
